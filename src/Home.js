@@ -10,6 +10,7 @@ const Home = () => {
     
     ]);
 
+
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs)
@@ -17,8 +18,7 @@ const Home = () => {
 
     useEffect(() => {
         console.log('use effect ran');
-        console.log(blogs)
-    })
+    }, [])
 
     return ( 
         <div className="home">
